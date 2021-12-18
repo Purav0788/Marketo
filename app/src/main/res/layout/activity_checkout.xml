@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColor">
+
+    <Button
+        android:id="@+id/checkoutButton"
+        android:layout_width="300dp"
+        android:layout_height="57dp"
+        android:background="@drawable/btn_rounded_primary"
+        android:fontFamily="@font/farro_medium"
+        android:text="P R O C E E D"
+        android:textColor="@color/primaryColor"
+        android:textStyle="bold"
+        app:backgroundTint="@color/secondaryColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalText" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/stateText"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="57dp"
+        android:background="@drawable/rounded_edit_text"
+        android:cursorVisible="true"
+        android:fontFamily="@font/farro_regular"
+        android:gravity="center_horizontal"
+        android:hint="STATE"
+        android:inputType="text"
+        android:maxLength="50"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/totalText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zipcodeText" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/zipcodeText"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="57dp"
+        android:background="@drawable/rounded_edit_text"
+        android:cursorVisible="true"
+        android:fontFamily="@font/farro_regular"
+        android:gravity="center_horizontal"
+        android:hint="ZIP"
+        android:inputType="date|datetime|text"
+        android:maxLength="50"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/stateText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cityText" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/streetText"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="57dp"
+        android:background="@drawable/rounded_edit_text"
+        android:cursorVisible="true"
+        android:fontFamily="@font/farro_regular"
+        android:gravity="center_horizontal"
+        android:hint="STREET"
+        android:inputType="text"
+        android:maxLength="50"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/cityText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/cityText"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="57dp"
+        android:background="@drawable/rounded_edit_text"
+        android:cursorVisible="true"
+        android:fontFamily="@font/farro_regular"
+        android:gravity="center_horizontal"
+        android:hint="CITY"
+        android:inputType="text"
+        android:maxLength="50"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/zipcodeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/streetText" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+
+
+        android:background="@drawable/splash_background"
+        android:contentDescription="LOGO"
+        app:layout_constraintBottom_toTopOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_point_of_sale_24"
+        app:tint="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/farro_bold"
+        android:text="CHECKOUT"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/streetText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+    <TextView
+        android:id="@+id/totalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/farro_bold"
+        android:text="TOTAL"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkoutButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stateText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

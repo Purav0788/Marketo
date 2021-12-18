@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">A&amp;S Central</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="welcome">A&amp;S Central</string>
+    <string name="for_android">for android</string>
+    <string name="l_o_g_i_n">L O G I N</string>
+    <string name="switch_to_seller">SWITCH TO SELLER</string>
+    <string name="password">PASSWORD</string>
+    <string name="username">USERNAME</string>
+    <string-array name="filter_array">
+        <item>Default</item>
+        <item>By Name</item>
+        <item>Price:Low to High</item>
+        <item>Price:High to Low</item>
+        <item>By Category</item>
+
+    </string-array>
+</resources>
